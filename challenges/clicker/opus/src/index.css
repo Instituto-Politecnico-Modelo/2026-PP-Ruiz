@@ -1,0 +1,37 @@
+:root {
+  --text: #e2e8f0;
+  --bg: #0f172a;
+  --card-bg: #1e293b;
+  --accent: #3b82f6;
+  --accent-hover: #2563eb;
+  --success: #22c55e;
+  --success-hover: #16a34a;
+  --disabled: #475569;
+  --countdown-color: #f59e0b;
+  --timer-color: #ef4444;
+  --border: #334155;
+
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  color-scheme: dark;
+  color: var(--text);
+  background: var(--bg);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#root {
+  width: 100%;
+  max-width: 480px;
+  padding: 20px;
+}

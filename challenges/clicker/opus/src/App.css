@@ -1,0 +1,127 @@
+.app {
+  text-align: center;
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 40px 32px;
+  border: 1px solid var(--border);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: white;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.score-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.score-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #94a3b8;
+}
+
+.score-value {
+  font-size: 2.5rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+.score-value.max {
+  color: var(--countdown-color);
+}
+
+.score-value.current {
+  color: var(--accent);
+}
+
+.countdown {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--countdown-color);
+  margin-bottom: 24px;
+  animation: pulse 0.5s ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.timer {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--timer-color);
+  margin-bottom: 24px;
+}
+
+.result {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--success);
+  margin-bottom: 24px;
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s, opacity 0.2s;
+  color: white;
+}
+
+.btn:active:not(:disabled) {
+  transform: scale(0.95);
+}
+
+.btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.btn-start {
+  background: var(--accent);
+}
+
+.btn-start:hover:not(:disabled) {
+  background: var(--accent-hover);
+}
+
+.btn-click {
+  background: var(--success);
+}
+
+.btn-click:hover:not(:disabled) {
+  background: var(--success-hover);
+}
